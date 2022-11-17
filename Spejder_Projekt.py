@@ -28,10 +28,14 @@ while True:
             print("correct phone number")
         else:
             print("incorrect phone number")
-        if all(x.isspace or x.isalpha or x.isnumeric for x in values[3]):
+        if all(x.isalnum or x.isnumeric for x in values[3]):
             print("correct adress")
         else:
             print("incorrect adress")
+        if all(len(str(y)) > 1 for y in values):
+            print("your fields were not empty good job!")
+        else:
+            print("one of your input fields are empty")
         with open('Brugerfile.txt', 'a') as f:
             f.write('Name: ')
             f.write(values[0])

@@ -4,4 +4,22 @@ phone nr: testt
 Adress: testName: test
 Email: test@gmail.com
 phone nr: test
-Adress: test
+Adress: testName: Kirin Asda
+Email: kirinasda@gmail.com
+phone nr: 49201937
+Adress: house 7 Name: kirin asda1
+Email: k
+phone nr: 222222222
+Adress: ?Name: ?
+Email: 
+phone nr: 
+Adress: Name: =
+Email: 
+phone nr: 
+Adress: Name: (
+Email: 
+phone nr: 
+Adress: Name: §
+Email: 
+phone nr: 
+Adress: 
