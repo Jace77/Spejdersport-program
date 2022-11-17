@@ -16,7 +16,23 @@ while True:
     if event == 'close' or event == sg.WINDOW_CLOSED:
         break
     if event == 'Save':
-        with open('Brugerfile.txt', 'w') as f:
+        if all(x.isspace or x.isalpha for x in values[0]):
+            print("correct name")
+        else:
+            print("incorrect name")
+        if "@gmail.com" in values[1]:
+            print("correct email")
+        else:
+            print("incorrect email")
+        if len(values[2]) == 8:
+            print("correct phone number")
+        else:
+            print("incorrect phone number")
+        if all(x.isspace or x.isalpha or x.isnumeric for x in values[3]):
+            print("correct adress")
+        else:
+            print("incorrect adress")
+        with open('Brugerfile.txt', 'a') as f:
             f.write('Name: ')
             f.write(values[0])
             f.write('\n')
