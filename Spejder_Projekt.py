@@ -1,4 +1,4 @@
-# lav et program som gemmer kontaktoplysninger i en text fil
+# lav et program som gemmer kontaktoplysninger i en text fil test
 import PySimpleGUI as sg
 
 
