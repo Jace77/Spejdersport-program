@@ -19,7 +19,7 @@ while True:
     if event == 'close' or event == sg.WINDOW_CLOSED:
         break
     if event == 'Save':
-        if all(not y for y in values):
+        if all(values[y] for y in values):
             print("your fields were not empty good job!")
         else:
             print("one of your input fields are empty")
