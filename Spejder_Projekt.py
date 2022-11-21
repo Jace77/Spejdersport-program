@@ -43,7 +43,7 @@ while True:
             print("incorrect phone number")
             window.Element("output").update("incorrect phone number")
             continue
-        if all(x.isalnum() or x.isnumeric() for x in values[3]):
+        if all(x.isalnum() or x.isnumeric() or x is " " for x in values[3]):
             print("correct adress")
         else:
             print("incorrect adress")
