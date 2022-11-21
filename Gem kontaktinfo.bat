@@ -1,2 +1,2 @@
 @ echo off
-python C:\Users\RASMUS\Documents\GitHub\Spejdersport-program\Spejder_Projekt.py
+py C:\Users\rasmu\Documents\GitHub\Spejdersport-program\Spejder_Projekt.py
