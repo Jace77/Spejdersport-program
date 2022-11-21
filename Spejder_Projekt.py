@@ -8,7 +8,7 @@ layout = [[sg.Text('write your full name:', size=(20, 1)), sg.InputText()],
           [sg.Text('write your email:     ', size=(20, 1)), sg.InputText()],
           [sg.Text('write your phone nr.:', size=(20, 1)), sg.InputText()],
           [sg.Text('write your adress:   ', size=(20, 1)), sg.InputText()],
-          [sg.Text("strip", size=(50, 1), key='output', text_color="red")],
+          [sg.Text("", size=(50, 1), key='output', text_color="red")],
           [sg.Button('Save'), sg.Button('close')]]
 
 window = sg.Window('Spejdersport', layout, margins=(100, 100))
@@ -43,7 +43,7 @@ while True:
             print("incorrect phone number")
             window.Element("output").update("incorrect phone number")
             continue
-        if all(x.isalnum() or x.isnumeric() for x in values[3]):
+        if all(x.isalnum() or x.isnumeric() or x is " " for x in values[3]):
             print("correct adress")
         else:
             print("incorrect adress")
