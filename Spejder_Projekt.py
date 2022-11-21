@@ -8,7 +8,7 @@ layout = [[sg.Text('write your full name:', size=(20, 1)), sg.InputText()],
           [sg.Text('write your email:     ', size=(20, 1)), sg.InputText()],
           [sg.Text('write your phone nr.:', size=(20, 1)), sg.InputText()],
           [sg.Text('write your adress:   ', size=(20, 1)), sg.InputText()],
-          [sg.Text("strip", size=(50, 1), key='output', text_color="red")],
+          [sg.Text("", size=(50, 1), key='output', text_color="red")],
           [sg.Button('Save'), sg.Button('close')]]
 
 window = sg.Window('Spejdersport', layout, margins=(100, 100))
