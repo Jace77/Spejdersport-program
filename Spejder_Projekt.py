@@ -1,15 +1,12 @@
 # lav et program som gemmer kontaktoplysninger i en text fil test
-# if values.strip(): this line of code in memoriam of strip
-# Z is a impostor
-import PySimpleGUI as sg
-
-
+import PySimpleGUI as sg #vi importerer PySimpleGUI for at lave vores input field for text
+#vores layout er det array man skriver sin data ind i, det bliver gemt i values som vi bruger senere
 layout = [[sg.Text('write your full name:', size=(20, 1)), sg.InputText()],
           [sg.Text('write your email:     ', size=(20, 1)), sg.InputText()],
           [sg.Text('write your phone nr.:', size=(20, 1)), sg.InputText()],
           [sg.Text('write your adress:   ', size=(20, 1)), sg.InputText()],
           [sg.Text("", size=(50, 1), key='output', text_color="red")],
-          [sg.Button('Save'), sg.Button('close')]]
+          [sg.Button('Save'), sg.Button('close')]] #vi sætter 2 knapper ind i vores array som bruges til at åbne og lukke input boxen
 
 window = sg.Window('Spejdersport', layout, margins=(100, 100))
 window.read()
